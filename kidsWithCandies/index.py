@@ -4,7 +4,7 @@ class Solution(object):
         returnArray = []
 
         for candy in candies:
-            returnArray.append(bool(candy + extraCandies >= maxCandies))
+            returnArray.append(candy + extraCandies >= maxCandies)
 
         return returnArray
 
