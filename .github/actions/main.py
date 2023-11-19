@@ -93,15 +93,32 @@ def createPr():
 
     g = Github(args.get('token'))
     
+    robot_branch_name = 'robots-ci-branch'
+    
+    try:
+        repo = g.get_repo(args.get('repo_name'))
+        repo.get_branch(robot_branch_name)
+        repo.get_git_ref(f'heads/{robot_branch_name}').delete()
+    except:
+        pass
+    
+    try:
+        repo = g.get_repo(args.get('repo_name'))
+        prs = repo.get_pulls(state='open', head=f'{args.get("repo_owner")}:{robot_branch_name}')
+        for pr in prs:
+            pr.edit(state='closed')
+    except:
+        pass
+    
     repo = g.get_repo(args.get('repo_name'))
     
     source = repo.get_branch(args.get('source_branch'))
     
-    repo.create_git_ref(ref='refs/heads/' + 'robots-ci', sha=source.commit.sha)
+    repo.create_git_ref(ref='refs/heads/' + robot_branch_name, sha=source.commit.sha)
     
     git_file = 'README.md'
     
-    repo.update_file(git_file, "🤖 README.md update", content, repo.get_contents(git_file, ref='robots-ci').sha, branch='robots-ci')
+    repo.update_file(git_file, "🤖 README.md update", content, repo.get_contents(git_file, ref=robot_branch_name).sha, branch=robot_branch_name)
 
     pr = repo.create_pull(
         title='🤖 Update README.md',

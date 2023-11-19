@@ -1,4 +1,4 @@
-name: Count LeetCode Solutions
+name: 🤖 Update README.md with summary
 
 on: [push]
 
