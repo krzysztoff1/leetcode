@@ -1,0 +1,26 @@
+name: 🤖 Update README.md with summary
+
+on:
+  push:
+    branches:
+      - "master"
+      - "!robots-ci-branch"
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      - name: Set up Python 3.12.0
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.12.0
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install flake8 pytest PyGithub termcolor
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - name: Let the robots do their work
+        run: python ./.github/actions/main.py --token=${{ secrets.TOKEN }} --source_branch=${{ github.ref }} --target_branch=${{ github.ref }} --repo_name=${{ github.repository }} --repo_owner=${{ github.repository_owner }}
