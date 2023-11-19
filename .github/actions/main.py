@@ -89,10 +89,6 @@ def createPr():
         cprint("One or more required arguments are missing. No pull request will be created. Required arguments: token, source_branch, target_branch, repo_name, repo_owner", 'red')
         return
     
-    if args.get('source_branch') == args.get('target_branch'):
-        cprint("Source and target branches are the same. No pull request will be created.", 'red')
-        return
-    
     cprint(args)
 
     g = Github(args.get('token'))
