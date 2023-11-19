@@ -24,18 +24,18 @@ dirs = [d for d in dirs if not d.startswith('.')]
 print(f"Dirs: {dirs}")
 print(f"Total LeetCode Solutions: {len(dirs)}") 
 
-# create readme with links to all solutions
-with open('README.md', 'w') as f:
-    f.write('# Personal LeetCode Solutions\n\n')
-    f.write('## Solutions\n\n')
-    for dir in dirs:
-        f.write(f'### {getPrettyLangName(dir)}\n\n')
-        f.write(f'| # | Title | Solution | Link |\n')
-        f.write(f'|---| ----- | -------- | ---- |\n')
-        problems = getProblemsFromDir(dir)
-        problems.sort()
-        print(f'{problem} | [{problem}](./{dir}/{problem}) | [Solution](./{dir}/{problem}) | [Link](https://leetcode.com/problems/{kebab(problem)})')
-        for problem in problems:
-            f.write(f'| {problem} | [{problem}](./{dir}/{problem}) | [Solution](./{dir}/{problem}) | [Link](https://leetcode.com/problems/{kebab(problem)}) |\n')
-        f.write('\n')
+# # create readme with links to all solutions
+# with open('README.md', 'w') as f:
+#     f.write('# Personal LeetCode Solutions\n\n')
+#     f.write('## Solutions\n\n')
+#     for dir in dirs:
+#         f.write(f'### {getPrettyLangName(dir)}\n\n')
+#         f.write(f'| # | Title | Solution | Link |\n')
+#         f.write(f'|---| ----- | -------- | ---- |\n')
+#         problems = getProblemsFromDir(dir)
+#         problems.sort()
+#         print(f'{problem} | [{problem}](./{dir}/{problem}) | [Solution](./{dir}/{problem}) | [Link](https://leetcode.com/problems/{kebab(problem)})')
+#         for problem in problems:
+#             f.write(f'| {problem} | [{problem}](./{dir}/{problem}) | [Solution](./{dir}/{problem}) | [Link](https://leetcode.com/problems/{kebab(problem)}) |\n')
+#         f.write('\n')
 
