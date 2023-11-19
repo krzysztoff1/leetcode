@@ -3,6 +3,8 @@ import os
 from github import Github, InputGitTreeElement
 from termcolor import cprint
 
+is_cron_job = os.environ.get('GITHUB_ACTIONS') == 'true'
+
 def kebab(s):
     return '-'.join(
         sub(r"(\s|_|-)+"," ",
@@ -57,7 +59,7 @@ with open('README.md', 'r') as file:
     content = file.read()
 
 def createPr(): 
-    if (os.environ.get('cron_job') != 'true'):
+    if (not is_cron_job):
         cprint("Not a cron job. No pull request will be created.", 'green')
         return
 
