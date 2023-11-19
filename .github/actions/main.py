@@ -71,7 +71,14 @@ def createPr():
     repo_name = os.environ.get('repo_name')
     repo_owner = os.environ.get('repo_owner')
 
+    print(token)
+    print(source_branch)
+    print(target_branch)
+    print(repo_name)
+    print(repo_owner)
 
+        
+    
     if not token or not source_branch or not target_branch or not repo_name or not repo_owner:
         cprint("One or more required arguments are missing. No pull request will be created. Required arguments: token, source_branch, target_branch, repo_name, repo_owner", 'red')
         return
