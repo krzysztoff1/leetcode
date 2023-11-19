@@ -25,4 +25,4 @@ jobs:
           # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
           # flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
       - name: Run Count Solutions Script
-        run: python ./.github/actions/main.py --cron_job --token ${{ secrets.TOKEN }} --source-branch ${{ github.ref }} --target-branch ${{ github.ref }} --repo-name ${{ github.repository }} --repo-owner ${{ github.repository_owner }}
+        run: python ./.github/actions/main.py --token=${{ secrets.TOKEN }} --source-branch=${{ github.ref }} --target-branch=${{ github.ref }} --repo-name=${{ github.repository }} --repo-owner=${{ github.repository_owner }}

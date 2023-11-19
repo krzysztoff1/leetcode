@@ -1,5 +1,6 @@
-from re import sub
 import os
+import sys
+from re import sub
 from github import Github, InputGitTreeElement
 from termcolor import cprint
 import argparse
@@ -60,6 +61,7 @@ with open('README.md', 'r') as file:
     content = file.read()
 
 def getArgs():
+    cprint(sys.argv, 'green')
     parser = argparse.ArgumentParser(description='Process command line arguments.')
 
     # Define the arguments
@@ -70,7 +72,7 @@ def getArgs():
     parser.add_argument('--repo_owner', type=str, required=True, help='Repository owner')
 
     # Parse the arguments
-    args = parser.parse_args()
+    args = parser.parse_args(sys.argv)
 
     # Print or use the arguments as needed
     print(f"Token: {args.token}")
