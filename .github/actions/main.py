@@ -90,25 +90,24 @@ def createPr():
     if not args.get('token') or not args.get('source_branch') or not args.get('target_branch') or not args.get('repo_name') or not args.get('repo_owner'):
         cprint("One or more required arguments are missing. No pull request will be created. Required arguments: token, source_branch, target_branch, repo_name, repo_owner", 'red')
         return
-    
 
     g = Github(args.get('token'))
     
     repo = g.get_repo(args.get('repo_name'))
-    print(repo)
     
     source = repo.get_branch(args.get('source_branch'))
     
-    print(source)
     repo.create_git_ref(ref='refs/heads/' + 'robots-ci', sha=source.commit.sha)
+    
     git_file = 'README.md'
+    
     repo.update_file(git_file, "🤖 README.md update", content, repo.get_contents(git_file, ref='robots-ci').sha, branch='robots-ci')
 
     pr = repo.create_pull(
         title='🤖 Update README.md',
         body='Modifications to README',
         head='robots-ci',
-        base='master'
+        base=args.get('target_branch')
     )
     
     print(pr)
