@@ -1,0 +1,28 @@
+name: Count LeetCode Solutions
+
+on:
+  pull_request:
+
+jobs:
+  count-solutions:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.x"
+
+      - name: Count Solutions
+        run: |
+          import os
+
+          total_solutions = 0
+          for root, dirs, files in os.walk('.'):
+              if root.count(os.sep) == 1:
+                  total_solutions += len(files)
+
+          print(f"Total LeetCode Solutions: {total_solutions}")
