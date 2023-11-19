@@ -1,6 +1,10 @@
 name: 🤖 Update README.md with summary
 
-on: [push]
+on:
+  push:
+    branches:
+      - "*"
+      - "!robots-ci-branch"
 
 jobs:
   count-solutions:
