@@ -16,12 +16,6 @@
 | parkingSystem | [parkingSystem](./csharp/parkingSystem) | [Solution](./csharp/parkingSystem) |
 | removeElement | [removeElement](./csharp/removeElement) | [Solution](./csharp/removeElement) |
 
-### Python
-
-| # | Title | Solution |
-|---| ----- | -------- |
-| kidsWithCandies | [kidsWithCandies](./python/kidsWithCandies) | [Solution](./python/kidsWithCandies) |
-
 ### Typescript
 
 | # | Title | Solution |
