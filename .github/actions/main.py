@@ -89,10 +89,11 @@ def createPr():
         cprint("One or more required arguments are missing. No pull request will be created. Required arguments: token, source_branch, target_branch, repo_name, repo_owner", 'red')
         return
     
-    cprint(args)
 
     g = Github(args.get('token'))
-    repo = g.get_user().get_repo(args.get('repo_name'))
+    repo = g.get_repo(args.get('repo_name'))
+    print(repo)
+    
     source = repo.get_branch(args.get('source_branch'))
     repo.create_git_ref(ref='refs/heads/' + args.get('target_branch'), sha=source.commit.sha)
     git_file = 'README.md'
