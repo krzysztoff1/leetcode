@@ -3,7 +3,7 @@ import sys
 from re import sub
 from github import Github, InputGitTreeElement
 from termcolor import cprint
-import argparse
+import datetime
 
 is_cron_job = os.environ.get('GITHUB_ACTIONS') == 'true'
 
@@ -98,16 +98,17 @@ def createPr():
     source = repo.get_branch(args.get('source_branch'))
     
     print(source)
-    # repo.create_git_ref(ref='refs/heads/' + args.get('target_branch'), sha=source.commit.sha)
-    # git_file = 'README.md'
-    # repo.update_file(git_file, "🤖 README.md update", content, repo.get_contents(git_file, ref='new-branch').sha, branch='new-branch')
+    timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
+    repo.create_git_ref(ref=f'refs/heads/{args.get("target_branch") + timestamp}', sha=source.commit.sha)
+    git_file = 'README.md'
+    repo.update_file(git_file, "🤖 README.md update", content, repo.get_contents(git_file, ref='new-branch').sha, branch='new-branch')
 
-    # pr = repo.create_pull(
-    #     title='🤖 Update README.md',
-    #     body='Modifications to README',
-    #     head='new-branch',
-    #     base='main'
-    # )
+    pr = repo.create_pull(
+        title='🤖 Update README.md',
+        body='Modifications to README',
+        head='new-branch',
+        base='main'
+    )
     
     print(pr)
 
