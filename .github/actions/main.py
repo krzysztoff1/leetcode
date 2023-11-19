@@ -108,8 +108,14 @@ def createPr():
         pass
     
     repo = g.get_repo(args.get('repo_name'))
-    
     source = repo.get_branch(args.get('source_branch'))
+
+    current_readme_content = repo.get_contents('README.md', ref=args.get('target_branch'))
+    
+    if current_readme_content.decoded_content.decode('utf-8') == content:
+        cprint("No changes to README.md. No pull request will be created.", 'green')
+        return
+    
     
     repo.create_git_ref(ref='refs/heads/' + robot_branch_name, sha=source.commit.sha)
     
