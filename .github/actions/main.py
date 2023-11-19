@@ -62,26 +62,22 @@ with open('README.md', 'r') as file:
 
 def getArgs():
     cprint(sys.argv, 'green')
-    parser = argparse.ArgumentParser(description='Process command line arguments.')
-
-    # Define the arguments
-    parser.add_argument('--token', type=str, required=True, help='GitHub API token')
-    parser.add_argument('--source_branch', type=str, required=True, help='Source branch name')
-    parser.add_argument('--target_branch', type=str, required=True, help='Target branch name')
-    parser.add_argument('--repo_name', type=str, required=True, help='Repository name')
-    parser.add_argument('--repo_owner', type=str, required=True, help='Repository owner')
-
-    # Parse the arguments
-    args = parser.parse_args(sys.argv)
-
-    # Print or use the arguments as needed
-    print(f"Token: {args.token}")
-    print(f"Source Branch: {args.source_branch}")
-    print(f"Target Branch: {args.target_branch}")
-    print(f"Repository Name: {args.repo_name}")
-    print(f"Repository Owner: {args.repo_owner}")
     
-    return args
+    argv = sys.argv
+    
+    for i in range(len(argv)):
+        if argv[i] == '--token':
+            token = argv[i+1]
+        if argv[i] == '--source_branch':
+            source_branch = argv[i+1]
+        if argv[i] == '--target_branch':
+            target_branch = argv[i+1]
+        if argv[i] == '--repo_name':
+            repo_name = argv[i+1]
+        if argv[i] == '--repo_owner':
+            repo_owner = argv[i+1]
+    
+    return argparse.Namespace(token=token, source_branch=source_branch, target_branch=target_branch, repo_name=repo_name, repo_owner=repo_owner)
 
 
 def createPr(): 
