@@ -1,6 +1,6 @@
 # Personal LeetCode Solutions
 
-Solution used only for learning purposes. This readme is automatically updated. Solutions are not optimal.
+Used only for learning purposes. This readme is automatically updated. Solutions are not optimal.
 
 ## Solutions
 
@@ -18,11 +18,11 @@ Solution used only for learning purposes. This readme is automatically updated. 
 | parkingSystem | [parkingSystem](./csharp/parkingSystem) | [Solution](./csharp/parkingSystem) |
 | removeElement | [removeElement](./csharp/removeElement) | [Solution](./csharp/removeElement) |
 
-### Rust
+### Python
 
 | # | Title | Solution |
 |---| ----- | -------- |
-| kidsWithCandies | [kidsWithCandies](./rust/kidsWithCandies) | [Solution](./rust/kidsWithCandies) |
+| kidsWithCandies | [kidsWithCandies](./python/kidsWithCandies) | [Solution](./python/kidsWithCandies) |
 
 ### Typescript
 
@@ -40,4 +40,10 @@ Solution used only for learning purposes. This readme is automatically updated. 
 | romanToInt | [romanToInt](./typescript/romanToInt) | [Solution](./typescript/romanToInt) |
 | searchInsert | [searchInsert](./typescript/searchInsert) | [Solution](./typescript/searchInsert) |
 | smallerNumbersThanCurrent | [smallerNumbersThanCurrent](./typescript/smallerNumbersThanCurrent) | [Solution](./typescript/smallerNumbersThanCurrent) |
+
+### Rust
+
+| # | Title | Solution |
+|---| ----- | -------- |
+| kidsWithCandies | [kidsWithCandies](./rust/kidsWithCandies) | [Solution](./rust/kidsWithCandies) |
 
