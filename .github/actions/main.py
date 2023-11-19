@@ -82,6 +82,8 @@ def createPr():
     cprint("Creating PR...", 'green')
 
     args = getArgs()
+    cprint(args)
+
     
     if not args.get('token') or not args.get('source_branch') or not args.get('target_branch') or not args.get('repo_name') or not args.get('repo_owner'):
         cprint("One or more required arguments are missing. No pull request will be created. Required arguments: token, source_branch, target_branch, repo_name, repo_owner", 'red')
