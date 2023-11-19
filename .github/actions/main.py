@@ -95,20 +95,20 @@ def createPr():
     
     cprint(args)
 
-    # g = Github(args.get('token'))
-    # repo = g.get_user().get_repo(args.get('repo_name'))
-    # source = repo.get_branch(args.get('source_branch'))
-    # repo.create_git_ref(ref='refs/heads/' + args.get('target_branch'), sha=source.commit.sha)
-    # git_file = 'README.md'
-    # repo.update_file(git_file, "🤖 README.md update", content, repo.get_contents(git_file, ref='new-branch').sha, branch='new-branch')
+    g = Github(args.get('token'))
+    repo = g.get_user().get_repo(args.get('repo_name'))
+    source = repo.get_branch(args.get('source_branch'))
+    repo.create_git_ref(ref='refs/heads/' + args.get('target_branch'), sha=source.commit.sha)
+    git_file = 'README.md'
+    repo.update_file(git_file, "🤖 README.md update", content, repo.get_contents(git_file, ref='new-branch').sha, branch='new-branch')
 
-    # pr = repo.create_pull(
-    #     title='🤖 Update README.md',
-    #     body='Modifications to README',
-    #     head='new-branch',
-    #     base='main'
-    # )
+    pr = repo.create_pull(
+        title='🤖 Update README.md',
+        body='Modifications to README',
+        head='new-branch',
+        base='main'
+    )
     
-    # print(pr)
+    print(pr)
 
 createPr()    
