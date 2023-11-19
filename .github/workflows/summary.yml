@@ -7,7 +7,7 @@ on:
       - "!robots-ci-branch"
 
 jobs:
-  count-solutions:
+  update-readme:
     runs-on: ubuntu-latest
 
     steps:
