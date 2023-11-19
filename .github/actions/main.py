@@ -61,60 +61,45 @@ with open('README.md', 'r') as file:
     content = file.read()
 
 def getArgs():
-    cprint(sys.argv, 'green')
-    
     argv = sys.argv
+    args = {}
     
     for i in range(len(argv)):
-        if argv[i] == '--token':
-            token = argv[i+1]
-        if argv[i] == '--source_branch':
-            source_branch = argv[i+1]
-        if argv[i] == '--target_branch':
-            target_branch = argv[i+1]
-        if argv[i] == '--repo_name':
-            repo_name = argv[i+1]
-        if argv[i] == '--repo_owner':
-            repo_owner = argv[i+1]
-    
-    return argparse.Namespace(token=token, source_branch=source_branch, target_branch=target_branch, repo_name=repo_name, repo_owner=repo_owner)
-
+        if (not argv[i].startswith("--")):
+            continue
+        
+        name = argv[i].split("=")[0].replace("--", "")
+        value = argv[i].split("=")[1]
+        args[name] = value
+        
+    return args            
 
 def createPr(): 
-    if (not is_cron_job):
-        cprint("Not a cron job. No pull request will be created.", 'green')
-        return
+    # if (not is_cron_job):
+    #     cprint("Not a cron job. No pull request will be created.", 'green')
+    #     return
 
     cprint("Creating PR...", 'green')
 
     args = getArgs()
-    token = args.token
-    source_branch = args.source_branch
-    target_branch = args.target_branch
-    repo_name = args.repo_name
-    repo_owner = args.repo_owner
     
-    if not token or not source_branch or not target_branch or not repo_name or not repo_owner:
+    if not args.get('token') or not args.get('source_branch') or not args.get('target_branch') or not args.get('repo_name') or not args.get('repo_owner'):
         cprint("One or more required arguments are missing. No pull request will be created. Required arguments: token, source_branch, target_branch, repo_name, repo_owner", 'red')
         return
     
-    if source_branch == target_branch:
+    if args.get('source_branch') == args.get('target_branch'):
         cprint("Source and target branches are the same. No pull request will be created.", 'red')
         return
-
-    cprint("source_branch: " + source_branch, 'green')
-    cprint("target_branch: " + target_branch, 'green')
-    cprint("repo_name: " + repo_name, 'green')
-    cprint("repo_owner: " + repo_owner, 'green')
     
-    # g = Github(token)
-    # repo = g.get_user().get_repo(repo_name)
-    # source = repo.get_branch(source_branch)
-    # repo.create_git_ref(ref='refs/heads/' + target_branch, sha=source.commit.sha)
+    cprint(args)
+
+    # g = Github(args.get('token'))
+    # repo = g.get_user().get_repo(args.get('repo_name'))
+    # source = repo.get_branch(args.get('source_branch'))
+    # repo.create_git_ref(ref='refs/heads/' + args.get('target_branch'), sha=source.commit.sha)
     # git_file = 'README.md'
     # repo.update_file(git_file, "🤖 README.md update", content, repo.get_contents(git_file, ref='new-branch').sha, branch='new-branch')
 
-    # # Create a pull request
     # pr = repo.create_pull(
     #     title='🤖 Update README.md',
     #     body='Modifications to README',
