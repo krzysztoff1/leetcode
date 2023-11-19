@@ -101,7 +101,8 @@ def createPr():
     
     print(source)
     repo.create_git_ref(ref='refs/heads/' + 'robots-ci', sha=source.commit.sha)
-    repo.update_file('README.md', "🤖 README.md update", content, repo.get_contents(git_file, ref='new-branch').sha, branch='new-branch')
+    git_file = 'README.md'
+    repo.update_file(git_file, "🤖 README.md update", content, repo.get_contents(git_file, ref='robots-ci').sha, branch='robots-ci')
 
     pr = repo.create_pull(
         title='🤖 Update README.md',
