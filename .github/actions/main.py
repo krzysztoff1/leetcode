@@ -59,6 +59,29 @@ with open('README.md', 'w') as f:
 with open('README.md', 'r') as file:
     content = file.read()
 
+def getArgs():
+    parser = argparse.ArgumentParser(description='Process command line arguments.')
+
+    # Define the arguments
+    parser.add_argument('--token', type=str, required=True, help='GitHub API token')
+    parser.add_argument('--source_branch', type=str, required=True, help='Source branch name')
+    parser.add_argument('--target_branch', type=str, required=True, help='Target branch name')
+    parser.add_argument('--repo_name', type=str, required=True, help='Repository name')
+    parser.add_argument('--repo_owner', type=str, required=True, help='Repository owner')
+
+    # Parse the arguments
+    args = parser.parse_args()
+
+    # Print or use the arguments as needed
+    print(f"Token: {args.token}")
+    print(f"Source Branch: {args.source_branch}")
+    print(f"Target Branch: {args.target_branch}")
+    print(f"Repository Name: {args.repo_name}")
+    print(f"Repository Owner: {args.repo_owner}")
+    
+    return args
+
+
 def createPr(): 
     if (not is_cron_job):
         cprint("Not a cron job. No pull request will be created.", 'green')
@@ -66,39 +89,12 @@ def createPr():
 
     cprint("Creating PR...", 'green')
 
-    # token = os.environ.get('token')
-    # source_branch = os.environ.get('source_branch')
-    # target_branch = os.environ.get('target_branch')
-    # repo_name = os.environ.get('repo_name')
-    # repo_owner = os.environ.get('repo_owner')
-    
-    
-    
-    # for i in range(len(sys.argv)):
-    #     print(sys.argv[i])
-    
-    # find above in sys.argv
-    # if not found, find in env vars
-    
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--token', required=True)
-    parser.add_argument('--source_branch', required=True)
-    parser.add_argument('--target_branch', required=True)
-    parser.add_argument('--repo_name', required=True)
-    parser.add_argument('--repo_owner', required=True)
-    args = parser.parse_args()
-
+    args = getArgs()
     token = args.token
     source_branch = args.source_branch
     target_branch = args.target_branch
     repo_name = args.repo_name
     repo_owner = args.repo_owner
-
-    print(token)
-    print(source_branch)
-    print(target_branch)
-    print(repo_name)
-    print(repo_owner)
     
     if not token or not source_branch or not target_branch or not repo_name or not repo_owner:
         cprint("One or more required arguments are missing. No pull request will be created. Required arguments: token, source_branch, target_branch, repo_name, repo_owner", 'red')
