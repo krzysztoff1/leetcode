@@ -127,6 +127,8 @@ def createPr():
         base=args.get('target_branch')
     )
     
-    print(pr)
+    if pr:
+        cprint("PR created!", 'green')
+    
 
 createPr()    
