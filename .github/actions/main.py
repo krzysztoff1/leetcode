@@ -1,9 +1,10 @@
 import os
 import sys
 from re import sub
-from github import Github, InputGitTreeElement
+from github import Github
 from termcolor import cprint
-import datetime
+import json
+import requests
 
 is_cron_job = os.environ.get('GITHUB_ACTIONS') == 'true'
 
@@ -74,6 +75,7 @@ def getArgs():
         
     return args            
 
+
 def createPr(): 
     if (not is_cron_job):
         cprint("Not a cron job. No pull request will be created.", 'green')
@@ -98,8 +100,9 @@ def createPr():
     source = repo.get_branch(args.get('source_branch'))
     
     print(source)
-    timestamp = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
-    repo.create_git_ref(ref=f'refs/heads/{args.get("target_branch") + timestamp}', sha=source.commit.sha)
+    repo.create_git_ref(ref='refs/heads/' + 'robots-ci', sha=source.commit.sha)
+
+    # repo.create_git_ref(ref=f'refs/heads/{args.get("target_branch")}', sha=source.commit.sha)
     git_file = 'README.md'
     repo.update_file(git_file, "🤖 README.md update", content, repo.get_contents(git_file, ref='new-branch').sha, branch='new-branch')
 
