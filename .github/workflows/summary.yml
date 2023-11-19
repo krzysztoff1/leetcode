@@ -3,7 +3,7 @@ name: 🤖 Update README.md with summary
 on:
   push:
     branches:
-      - "*"
+      - "master"
       - "!robots-ci-branch"
 
 jobs:
