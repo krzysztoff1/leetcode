@@ -2,6 +2,20 @@
 
 ## Solutions
 
+### C#
+
+| # | Title | Solution | Link |
+|---| ----- | -------- | ---- |
+| FinalValueAfterOperations | [FinalValueAfterOperations](./csharp/FinalValueAfterOperations) | [Solution](./csharp/FinalValueAfterOperations) | [Link](https://leetcode.com/problems/final-value-after-operations) |
+| LengthOfLastWord! | [LengthOfLastWord!](./csharp/LengthOfLastWord!) | [Solution](./csharp/LengthOfLastWord!) | [Link](https://leetcode.com/problems/length-of-last-word!) |
+| NumJewelsInStones | [NumJewelsInStones](./csharp/NumJewelsInStones) | [Solution](./csharp/NumJewelsInStones) | [Link](https://leetcode.com/problems/num-jewels-in-stones) |
+| NumberOfEmployeesWhoMetTarget | [NumberOfEmployeesWhoMetTarget](./csharp/NumberOfEmployeesWhoMetTarget) | [Solution](./csharp/NumberOfEmployeesWhoMetTarget) | [Link](https://leetcode.com/problems/number-of-employees-who-met-target) |
+| PlusOne | [PlusOne](./csharp/PlusOne) | [Solution](./csharp/PlusOne) | [Link](https://leetcode.com/problems/plus-one) |
+| RemoveDuplicates | [RemoveDuplicates](./csharp/RemoveDuplicates) | [Solution](./csharp/RemoveDuplicates) | [Link](https://leetcode.com/problems/remove-duplicates) |
+| Shuffle | [Shuffle](./csharp/Shuffle) | [Solution](./csharp/Shuffle) | [Link](https://leetcode.com/problems/shuffle) |
+| parkingSystem | [parkingSystem](./csharp/parkingSystem) | [Solution](./csharp/parkingSystem) | [Link](https://leetcode.com/problems/parking-system) |
+| removeElement | [removeElement](./csharp/removeElement) | [Solution](./csharp/removeElement) | [Link](https://leetcode.com/problems/remove-element) |
+
 ### Python
 
 | # | Title | Solution | Link |
@@ -30,18 +44,4 @@
 | # | Title | Solution | Link |
 |---| ----- | -------- | ---- |
 | kidsWithCandies | [kidsWithCandies](./rust/kidsWithCandies) | [Solution](./rust/kidsWithCandies) | [Link](https://leetcode.com/problems/kids-with-candies) |
-
-### C#
-
-| # | Title | Solution | Link |
-|---| ----- | -------- | ---- |
-| FinalValueAfterOperations | [FinalValueAfterOperations](./csharp/FinalValueAfterOperations) | [Solution](./csharp/FinalValueAfterOperations) | [Link](https://leetcode.com/problems/final-value-after-operations) |
-| LengthOfLastWord! | [LengthOfLastWord!](./csharp/LengthOfLastWord!) | [Solution](./csharp/LengthOfLastWord!) | [Link](https://leetcode.com/problems/length-of-last-word!) |
-| NumJewelsInStones | [NumJewelsInStones](./csharp/NumJewelsInStones) | [Solution](./csharp/NumJewelsInStones) | [Link](https://leetcode.com/problems/num-jewels-in-stones) |
-| NumberOfEmployeesWhoMetTarget | [NumberOfEmployeesWhoMetTarget](./csharp/NumberOfEmployeesWhoMetTarget) | [Solution](./csharp/NumberOfEmployeesWhoMetTarget) | [Link](https://leetcode.com/problems/number-of-employees-who-met-target) |
-| PlusOne | [PlusOne](./csharp/PlusOne) | [Solution](./csharp/PlusOne) | [Link](https://leetcode.com/problems/plus-one) |
-| RemoveDuplicates | [RemoveDuplicates](./csharp/RemoveDuplicates) | [Solution](./csharp/RemoveDuplicates) | [Link](https://leetcode.com/problems/remove-duplicates) |
-| Shuffle | [Shuffle](./csharp/Shuffle) | [Solution](./csharp/Shuffle) | [Link](https://leetcode.com/problems/shuffle) |
-| parkingSystem | [parkingSystem](./csharp/parkingSystem) | [Solution](./csharp/parkingSystem) | [Link](https://leetcode.com/problems/parking-system) |
-| removeElement | [removeElement](./csharp/removeElement) | [Solution](./csharp/removeElement) | [Link](https://leetcode.com/problems/remove-element) |
 
