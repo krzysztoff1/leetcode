@@ -1,7 +1,6 @@
 name: Count LeetCode Solutions
 
-on:
-  pull_request:
+on: [push]
 
 jobs:
   count-solutions:
