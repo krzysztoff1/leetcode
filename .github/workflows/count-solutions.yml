@@ -22,15 +22,6 @@ jobs:
           # stop the build if there are Python syntax errors or undefined names
           flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
           # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
-          flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-
-      - name: Count Solutions
-        run: |
-          import os
-
-          total_solutions = 0
-          for root, dirs, files in os.walk('.'):
-              if root.count(os.sep) == 1:
-                  total_solutions += len(files)
-
-          print(f"Total LeetCode Solutions: {total_solutions}")
+          # flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+      - name: Run Count Solutions Script
+        run: python main.py
