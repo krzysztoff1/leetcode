@@ -75,9 +75,9 @@ def getArgs():
     return args            
 
 def createPr(): 
-    # if (not is_cron_job):
-    #     cprint("Not a cron job. No pull request will be created.", 'green')
-    #     return
+    if (not is_cron_job):
+        cprint("Not a cron job. No pull request will be created.", 'green')
+        return
 
     cprint("Creating PR...", 'green')
 
@@ -91,20 +91,23 @@ def createPr():
     
 
     g = Github(args.get('token'))
+    
     repo = g.get_repo(args.get('repo_name'))
     print(repo)
     
     source = repo.get_branch(args.get('source_branch'))
-    repo.create_git_ref(ref='refs/heads/' + args.get('target_branch'), sha=source.commit.sha)
-    git_file = 'README.md'
-    repo.update_file(git_file, "🤖 README.md update", content, repo.get_contents(git_file, ref='new-branch').sha, branch='new-branch')
+    
+    print(source)
+    # repo.create_git_ref(ref='refs/heads/' + args.get('target_branch'), sha=source.commit.sha)
+    # git_file = 'README.md'
+    # repo.update_file(git_file, "🤖 README.md update", content, repo.get_contents(git_file, ref='new-branch').sha, branch='new-branch')
 
-    pr = repo.create_pull(
-        title='🤖 Update README.md',
-        body='Modifications to README',
-        head='new-branch',
-        base='main'
-    )
+    # pr = repo.create_pull(
+    #     title='🤖 Update README.md',
+    #     body='Modifications to README',
+    #     head='new-branch',
+    #     base='main'
+    # )
     
     print(pr)
 
