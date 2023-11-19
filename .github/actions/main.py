@@ -123,7 +123,7 @@ def createPr():
     pr = repo.create_pull(
         title='🤖 Update README.md',
         body='Modifications to README',
-        head='robots-ci',
+        head=robot_branch_name,
         base=args.get('target_branch')
     )
     
