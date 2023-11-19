@@ -1,6 +1,12 @@
 from re import sub
 import os
 
+def kebab(s):
+    return '-'.join(
+        sub(r"(\s|_|-)+"," ",
+        sub(r"[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+",
+        lambda mo: ' ' + mo.group(0).lower(), s)).split())
+
 def getPrettyLangName(lang):
     if lang == 'csharp':
         return 'C#'
@@ -12,15 +18,10 @@ def getProblemsFromDir(dir):
     problems = [d for d in problems if not d.startswith('.')]
     return problems
 
-def kebab(s):
-    return '-'.join(
-        sub(r"(\s|_|-)+"," ",
-        sub(r"[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+",
-        lambda mo: ' ' + mo.group(0).lower(), s)).split())
-
 dirs = [d for d in os.listdir('.') if os.path.isdir(d)]
 dirs = [d for d in dirs if not d.startswith('.')]
 
+print(f"Dirs: {dirs}")
 print(f"Total LeetCode Solutions: {len(dirs)}") 
 
 # create readme with links to all solutions
