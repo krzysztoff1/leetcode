@@ -2,67 +2,22 @@
 {
     class ParkingSystem
     {
-        private int big;
-        private int medium;
-        private int small;
-
-        public ParkingSystem(int _big, int _medium, int _small)
+        private int[] cars;
+        public ParkingSystem(int big, int medium, int small)
         {
-            big = _big;
-            medium = _medium;
-            small = _small;
+            cars = new int[] { big, medium, small };
         }
 
         public bool AddCar(int carType)
         {
-            switch (carType)
+            if (cars[carType - 1] > 0)
             {
-                case 1:
-                    {
-                        if (big > 0)
-                        {
-                            big--;
-                            return true;
-                        }
-                        else
-                        {
-                            return false;
-                        }
-
-                        break;
-                    }
-                case 2:
-                    {
-                        if (medium > 0)
-                        {
-                            medium--;
-                            return true;
-                        }
-                        else
-                        {
-                            return false;
-                        }
-
-                        break;
-                    }
-                case 3:
-                    {
-                        if (small > 0)
-                        {
-                            small--;
-                            return true;
-                        }
-                        else
-                        {
-                            return false;
-                        }
-
-                        break;
-                    }
-                default:
-                    {
-                        return false;
-                    }
+                cars[carType - 1]--;
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
     }
@@ -71,8 +26,6 @@
     {
         public static void Main()
         {
-            Console.WriteLine("Hello");
-
             ParkingSystem obj = new ParkingSystem(1, 1, 0);
 
             Console.WriteLine($"1: {obj.AddCar(1)}");
