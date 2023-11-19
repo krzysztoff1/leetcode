@@ -3,8 +3,6 @@ import sys
 from re import sub
 from github import Github
 from termcolor import cprint
-import json
-import requests
 
 is_cron_job = os.environ.get('GITHUB_ACTIONS') == 'true'
 
@@ -28,7 +26,6 @@ def getProblemsFromDir(dir):
 dirs = [d for d in os.listdir('.') if os.path.isdir(d)]
 dirs = [d for d in dirs if not d.startswith('.')]
 
-# print pretty table of solutions using termcolor
 
 cprint('Personal LeetCode Solutions', 'green', 'on_green', attrs=['bold'])
 cprint('')
@@ -48,13 +45,13 @@ with open('README.md', 'w') as f:
     f.write('## Solutions\n\n')
     for dir in dirs:
         f.write(f'### {getPrettyLangName(dir)}\n\n')
-        f.write(f'| # | Title | Solution | Link |\n')
-        f.write(f'|---| ----- | -------- | ---- |\n')
+        f.write(f'| # | Title | Solution |\n')
+        f.write(f'|---| ----- | -------- |\n')
         problems = getProblemsFromDir(dir)
         problems.sort()
         
         for problem in problems:
-            f.write(f'| {problem} | [{problem}](./{dir}/{problem}) | [Solution](./{dir}/{problem}) | [Link](https://leetcode.com/problems/{kebab(problem)}) |\n')
+            f.write(f'| {problem} | [{problem}](./{dir}/{problem}) | [Solution](./{dir}/{problem}) |\n')
             
         f.write('\n')
 

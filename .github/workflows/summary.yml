@@ -22,5 +22,5 @@ jobs:
           python -m pip install --upgrade pip
           pip install flake8 pytest PyGithub termcolor
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-      - name: Run Count Solutions Script
+      - name: Let the robots do their work
         run: python ./.github/actions/main.py --token=${{ secrets.TOKEN }} --source_branch=${{ github.ref }} --target_branch=${{ github.ref }} --repo_name=${{ github.repository }} --repo_owner=${{ github.repository_owner }}
