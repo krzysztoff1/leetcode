@@ -98,7 +98,7 @@ def createPr():
     source = repo.get_branch(args.get('source_branch'))
     
     print(source)
-    timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
+    timestamp = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
     repo.create_git_ref(ref=f'refs/heads/{args.get("target_branch") + timestamp}', sha=source.commit.sha)
     git_file = 'README.md'
     repo.update_file(git_file, "🤖 README.md update", content, repo.get_contents(git_file, ref='new-branch').sha, branch='new-branch')
