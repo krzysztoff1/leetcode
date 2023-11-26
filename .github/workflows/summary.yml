@@ -1,4 +1,4 @@
-name: 🤖 Update README.md with summary
+name: 🤖 Update README.md with Leetcode summary
 
 on:
   push:
@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install flake8 pytest PyGithub termcolor
+          pip install flake8 pytest PyGithub termcolor requests
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Let the robots do their work
         run: python ./.github/actions/main.py --token=${{ secrets.TOKEN }} --source_branch=${{ github.ref }} --target_branch=${{ github.ref }} --repo_name=${{ github.repository }} --repo_owner=${{ github.repository_owner }}
