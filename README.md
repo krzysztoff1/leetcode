@@ -1,6 +1,9 @@
 # Personal LeetCode Solutions
 
-Used only for learning purposes. This readme is automatically updated. Solutions are not optimal.
+Used only for learning purposes. Solutions are not optimal.
+
+> [!NOTE]  
+> This readme is automatically updated using CI.
 
 ## Solutions
 

@@ -47,8 +47,14 @@ for dir in dirs:
 
 # create readme with links to all solutions
 with open('README.md', 'w') as f:
-    f.write('# Personal LeetCode Solutions\n\n')
-    f.write('Used only for learning purposes. This readme is automatically updated. Solutions are not optimal.\n\n')
+    f.write('''# Personal LeetCode Solutions
+
+Used only for learning purposes. Solutions are not optimal.
+
+> [!NOTE]  
+> This readme is automatically updated using CI.
+
+''')
     f.write('## Solutions\n\n')
     for dir in dirs:
         f.write(f'### {getPrettyLangName(dir)}\n\n')
