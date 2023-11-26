@@ -1,10 +1,16 @@
 import os
 import sys
+import requests
 from re import sub
 from github import Github
 from termcolor import cprint
 
 is_cron_job = os.environ.get('GITHUB_ACTIONS') == 'true'
+
+api_url = 'https://leetcode.com/api/problems/all/'
+response = requests.get(api_url)
+response = response.json()
+data = response['stat_status_pairs']
 
 def kebab(s):
     return '-'.join(
@@ -46,14 +52,25 @@ with open('README.md', 'w') as f:
     f.write('## Solutions\n\n')
     for dir in dirs:
         f.write(f'### {getPrettyLangName(dir)}\n\n')
-        f.write(f'| # | Title | Solution |\n')
-        f.write(f'|---| ----- | -------- |\n')
+        f.write(f'| # | Title | Link | Difficulty |\n')
+        f.write(f'|---| ----- | ---- | ---------- |\n')
         problems = getProblemsFromDir(dir)
         problems.sort()
         
         for problem in problems:
-            f.write(f'| {problem} | [{problem}](./{dir}/{problem}) | [Solution](./{dir}/{problem}) |\n')
+            link = 'https://leetcode.com/problems/' + kebab(problem)
+            problem_data = [d for d in data if d['stat']['question__title_slug'] == kebab(problem)][0]
+
+            difficulty = problem_data['difficulty']['level']
+            difficulty_map = [
+                '$${\color{green}Easy}$$',
+                '$${\color{orange}Medium}$$',
+                '$${\color{red}Hard}$$',
+            ]
+            difficulty = difficulty_map[difficulty - 1]
             
+            f.write(f'| {problem} | {kebab(problem).title()} | [View]({link}) | {difficulty} |\n')
+
         f.write('\n')
 
 with open('README.md', 'r') as file:
