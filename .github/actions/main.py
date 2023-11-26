@@ -52,8 +52,8 @@ with open('README.md', 'w') as f:
     f.write('## Solutions\n\n')
     for dir in dirs:
         f.write(f'### {getPrettyLangName(dir)}\n\n')
-        f.write(f'| # | Title | Link | Difficulty |\n')
-        f.write(f'|---| ----- | ---- | ---------- |\n')
+        f.write(f'| Title | Link | Difficulty |\n')
+        f.write(f'| ----- | ---- | ---------- |\n')
         problems = getProblemsFromDir(dir)
         problems.sort()
         
@@ -68,8 +68,8 @@ with open('README.md', 'w') as f:
                 '$${\color{red}Hard}$$',
             ]
             difficulty = difficulty_map[difficulty - 1]
-            
-            f.write(f'| {problem} | {kebab(problem).title()} | [View]({link}) | {difficulty} |\n')
+            title = problem_data['stat']['question__title']
+            f.write(f'| {title} | [View]({link}) | {difficulty} |\n')
 
         f.write('\n')
 
