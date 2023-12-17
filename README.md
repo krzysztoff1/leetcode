@@ -7,12 +7,6 @@ Used only for learning purposes. Solutions are not optimal.
 
 ## Solutions
 
-### Python
-
-| Title | Link | Difficulty |
-| ----- | ---- | ---------- |
-| [Kids With the Greatest Number of Candies](./python/kids-with-the-greatest-number-of-candies) | [View](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies) | $${\color{green}Easy}$$ |
-
 ### Typescript
 
 | Title | Link | Difficulty |
@@ -35,6 +29,12 @@ Used only for learning purposes. Solutions are not optimal.
 | Title | Link | Difficulty |
 | ----- | ---- | ---------- |
 | [Kids With the Greatest Number of Candies](./rust/kids-with-the-greatest-number-of-candies) | [View](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies) | $${\color{green}Easy}$$ |
+
+### Python
+
+| Title | Link | Difficulty |
+| ----- | ---- | ---------- |
+| [Kids With the Greatest Number of Candies](./python/kids-with-the-greatest-number-of-candies) | [View](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies) | $${\color{green}Easy}$$ |
 
 ### C#
 
