@@ -29,7 +29,6 @@ def getProblemsFromDir(dir):
 dirs = [d for d in os.listdir('.') if os.path.isdir(d)]
 dirs = [d for d in dirs if not d.startswith('.')]
 
-
 cprint('Personal LeetCode Solutions', 'green', 'on_green', attrs=['bold'])
 cprint('')
 cprint('Solutions:', 'green', attrs=['bold'])
@@ -73,11 +72,11 @@ Used only for learning purposes. Solutions are not optimal.
             ]
             difficulty = difficulty_map[difficulty - 1]
             title = problem_data['stat']['question__title']
-            f.write(f'| {title} | [View]({link}) | {difficulty} |\n')
+            f.write(f'| [{title}](./{dir}/{problem}) | [View]({link}) | {difficulty} |\n')
 
         f.write('\n')
 
 with open('README.md', 'r') as file:
     content = file.read()
 
-createPr(content)    
+createPr(content)
