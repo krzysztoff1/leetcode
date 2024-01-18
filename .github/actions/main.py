@@ -57,6 +57,7 @@ Used only for learning purposes. Solutions are not optimal.
         f.write(f'### {getPrettyLangName(dir)}\n\n')
         f.write(f'| Title | Link | Difficulty |\n')
         f.write(f'| ----- | ---- | ---------- |\n')
+
         problems = getProblemsFromDir(dir)
         problems.sort()
         
@@ -70,9 +71,12 @@ Used only for learning purposes. Solutions are not optimal.
                 '$${\color{orange}Medium}$$',
                 '$${\color{red}Hard}$$',
             ]
+
             difficulty = difficulty_map[difficulty - 1]
             title = problem_data['stat']['question__title']
-            f.write(f'| [{title}](./{dir}/{problem}) | [View]({link}) | {difficulty} |\n')
+            solution_link = './leetcode/tree/master/' + dir + '/' + problem
+
+            f.write(f'| [{title}]({solution_link}) | [View]({link}) | {difficulty} |\n')
 
         f.write('\n')
 

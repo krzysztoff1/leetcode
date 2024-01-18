@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AN6jGdbMbOn/PwhmCWnei4Y5o/wW2zfyZ5w14YNLmSjmj1eI7MdqfM4Y6K2/crGF59g79pD/a319C+57PP2Ifg==",
+  "dgSpecHash": "TW1Dc98hWHxMZ3wrhN2S7vM65Ah3so56SmFE9fLcC3rVIzPVN39fR2+3boLUCg6QEFBByoM20ywKj0CO4qajLw==",
   "success": true,
-  "projectFilePath": "/Users/krzysztofduda/Documents/leetcode/csharp/removeElement/dotnet.csproj",
+  "projectFilePath": "/Users/krzysztofduda/Documents/leetcode/csharp/final-value-of-variable-after-performing-operations/dotnet.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
