@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/krzysztofduda/Documents/leetcode/csharp/removeElement/dotnet.csproj",
+      "projectUniqueName": "/Users/krzysztofduda/Documents/leetcode/csharp/final-value-of-variable-after-performing-operations/dotnet.csproj",
       "projectName": "dotnet",
-      "projectPath": "/Users/krzysztofduda/Documents/leetcode/csharp/removeElement/dotnet.csproj",
+      "projectPath": "/Users/krzysztofduda/Documents/leetcode/csharp/final-value-of-variable-after-performing-operations/dotnet.csproj",
       "packagesPath": "/Users/krzysztofduda/.nuget/packages/",
-      "outputPath": "/Users/krzysztofduda/Documents/leetcode/csharp/removeElement/obj/",
+      "outputPath": "/Users/krzysztofduda/Documents/leetcode/csharp/final-value-of-variable-after-performing-operations/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/krzysztofduda/.nuget/NuGet/NuGet.Config"
