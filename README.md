@@ -45,8 +45,10 @@ Used only for learning purposes. Solutions are not optimal.
 | [Jewels and Stones](./csharp/jewels-and-stones) | [View](https://leetcode.com/problems/jewels-and-stones) | $${\color{green}Easy}$$ |
 | [Length of Last Word](./csharp/length-of-last-word) | [View](https://leetcode.com/problems/length-of-last-word) | $${\color{green}Easy}$$ |
 | [Number of Employees Who Met the Target](./csharp/number-of-employees-who-met-the-target) | [View](https://leetcode.com/problems/number-of-employees-who-met-the-target) | $${\color{green}Easy}$$ |
+| [Palindrome Number](./csharp/palindrome-number) | [View](https://leetcode.com/problems/palindrome-number) | $${\color{green}Easy}$$ |
 | [Plus One](./csharp/plus-one) | [View](https://leetcode.com/problems/plus-one) | $${\color{green}Easy}$$ |
 | [Remove Duplicates from Sorted Array](./csharp/remove-duplicates-from-sorted-array) | [View](https://leetcode.com/problems/remove-duplicates-from-sorted-array) | $${\color{green}Easy}$$ |
 | [Remove Element](./csharp/remove-element) | [View](https://leetcode.com/problems/remove-element) | $${\color{green}Easy}$$ |
 | [Shuffle the Array](./csharp/shuffle-the-array) | [View](https://leetcode.com/problems/shuffle-the-array) | $${\color{green}Easy}$$ |
+| [Strictly Palindromic Number](./csharp/strictly-palindromic-number) | [View](https://leetcode.com/problems/strictly-palindromic-number) | $${\color{orange}Medium}$$ |
 
