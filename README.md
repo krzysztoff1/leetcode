@@ -51,4 +51,5 @@ Used only for learning purposes. Solutions are not optimal.
 | [Remove Element](./leetcode/tree/master/csharp/remove-element) | [View](https://leetcode.com/problems/remove-element) | $${\color{green}Easy}$$ |
 | [Shuffle the Array](./leetcode/tree/master/csharp/shuffle-the-array) | [View](https://leetcode.com/problems/shuffle-the-array) | $${\color{green}Easy}$$ |
 | [Strictly Palindromic Number](./leetcode/tree/master/csharp/strictly-palindromic-number) | [View](https://leetcode.com/problems/strictly-palindromic-number) | $${\color{orange}Medium}$$ |
+| [Sum in a Matrix](./leetcode/tree/master/csharp/sum-in-a-matrix) | [View](https://leetcode.com/problems/sum-in-a-matrix) | $${\color{orange}Medium}$$ |
 
