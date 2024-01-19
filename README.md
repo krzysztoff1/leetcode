@@ -40,6 +40,7 @@ Used only for learning purposes. Solutions are not optimal.
 
 | Title | Link | Difficulty |
 | ----- | ---- | ---------- |
+| [Best Time to Buy and Sell Stock](./leetcode/tree/master/csharp/best-time-to-buy-and-sell-stock) | [View](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | $${\color{green}Easy}$$ |
 | [Design Parking System](./leetcode/tree/master/csharp/design-parking-system) | [View](https://leetcode.com/problems/design-parking-system) | $${\color{green}Easy}$$ |
 | [Final Value of Variable After Performing Operations](./leetcode/tree/master/csharp/final-value-of-variable-after-performing-operations) | [View](https://leetcode.com/problems/final-value-of-variable-after-performing-operations) | $${\color{green}Easy}$$ |
 | [Jewels and Stones](./leetcode/tree/master/csharp/jewels-and-stones) | [View](https://leetcode.com/problems/jewels-and-stones) | $${\color{green}Easy}$$ |
