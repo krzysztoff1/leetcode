@@ -30,12 +30,6 @@ Used only for learning purposes. Solutions are not optimal.
 | ----- | ---- | ---------- |
 | [Kids With the Greatest Number of Candies](./leetcode/tree/master/rust/kids-with-the-greatest-number-of-candies) | [View](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies) | $${\color{green}Easy}$$ |
 
-### Python
-
-| Title | Link | Difficulty |
-| ----- | ---- | ---------- |
-| [Kids With the Greatest Number of Candies](./leetcode/tree/master/python/kids-with-the-greatest-number-of-candies) | [View](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies) | $${\color{green}Easy}$$ |
-
 ### C#
 
 | Title | Link | Difficulty |
@@ -45,6 +39,7 @@ Used only for learning purposes. Solutions are not optimal.
 | [Final Value of Variable After Performing Operations](./leetcode/tree/master/csharp/final-value-of-variable-after-performing-operations) | [View](https://leetcode.com/problems/final-value-of-variable-after-performing-operations) | $${\color{green}Easy}$$ |
 | [Jewels and Stones](./leetcode/tree/master/csharp/jewels-and-stones) | [View](https://leetcode.com/problems/jewels-and-stones) | $${\color{green}Easy}$$ |
 | [Length of Last Word](./leetcode/tree/master/csharp/length-of-last-word) | [View](https://leetcode.com/problems/length-of-last-word) | $${\color{green}Easy}$$ |
+| [Longest Common Prefix](./leetcode/tree/master/csharp/longest-common-prefix) | [View](https://leetcode.com/problems/longest-common-prefix) | $${\color{green}Easy}$$ |
 | [Number of Employees Who Met the Target](./leetcode/tree/master/csharp/number-of-employees-who-met-the-target) | [View](https://leetcode.com/problems/number-of-employees-who-met-the-target) | $${\color{green}Easy}$$ |
 | [Palindrome Number](./leetcode/tree/master/csharp/palindrome-number) | [View](https://leetcode.com/problems/palindrome-number) | $${\color{green}Easy}$$ |
 | [Plus One](./leetcode/tree/master/csharp/plus-one) | [View](https://leetcode.com/problems/plus-one) | $${\color{green}Easy}$$ |
@@ -53,4 +48,10 @@ Used only for learning purposes. Solutions are not optimal.
 | [Shuffle the Array](./leetcode/tree/master/csharp/shuffle-the-array) | [View](https://leetcode.com/problems/shuffle-the-array) | $${\color{green}Easy}$$ |
 | [Strictly Palindromic Number](./leetcode/tree/master/csharp/strictly-palindromic-number) | [View](https://leetcode.com/problems/strictly-palindromic-number) | $${\color{orange}Medium}$$ |
 | [Sum in a Matrix](./leetcode/tree/master/csharp/sum-in-a-matrix) | [View](https://leetcode.com/problems/sum-in-a-matrix) | $${\color{orange}Medium}$$ |
+
+### Python
+
+| Title | Link | Difficulty |
+| ----- | ---- | ---------- |
+| [Kids With the Greatest Number of Candies](./leetcode/tree/master/python/kids-with-the-greatest-number-of-candies) | [View](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies) | $${\color{green}Easy}$$ |
 
