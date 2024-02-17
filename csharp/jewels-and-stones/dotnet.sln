@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet", "dotnet.csproj", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "longest-common-prefix", "..\longest-common-prefix\longest-common-prefix.csproj", "{505B51E9-5B65-401A-9342-BACD39971C48}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "reverse-words-in-a-string", "..\reverse-words-in-a-string\reverse-words-in-a-string.csproj", "{2D04A2E8-6D4F-4B33-97C8-178C9DB91AA1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{505B51E9-5B65-401A-9342-BACD39971C48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{505B51E9-5B65-401A-9342-BACD39971C48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{505B51E9-5B65-401A-9342-BACD39971C48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D04A2E8-6D4F-4B33-97C8-178C9DB91AA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D04A2E8-6D4F-4B33-97C8-178C9DB91AA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D04A2E8-6D4F-4B33-97C8-178C9DB91AA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D04A2E8-6D4F-4B33-97C8-178C9DB91AA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
