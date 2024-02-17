@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "AN6jGdbMbOn/PwhmCWnei4Y5o/wW2zfyZ5w14YNLmSjmj1eI7MdqfM4Y6K2/crGF59g79pD/a319C+57PP2Ifg==",
+  "dgSpecHash": "bK2KRqjtY6P1OQUypLUqwobYq0mTqazIRoHPMoUdM300C6VgAdW9MRU7ieHknywtQ9F+0uImaC9O6yQxF0iOrg==",
   "success": true,
-  "projectFilePath": "/Users/krzysztofduda/Documents/leetcode/csharp/removeElement/dotnet.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/krzysztofduda/Documents/leetcode/csharp/jewels-and-stones/dotnet.csproj",
+  "expectedPackageFiles": [
+    "/Users/krzysztofduda/.nuget/packages/microsoft.netcore.app.ref/7.0.15/microsoft.netcore.app.ref.7.0.15.nupkg.sha512",
+    "/Users/krzysztofduda/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.15/microsoft.aspnetcore.app.ref.7.0.15.nupkg.sha512",
+    "/Users/krzysztofduda/.nuget/packages/microsoft.netcore.app.host.osx-arm64/7.0.15/microsoft.netcore.app.host.osx-arm64.7.0.15.nupkg.sha512"
+  ],
   "logs": []
 }

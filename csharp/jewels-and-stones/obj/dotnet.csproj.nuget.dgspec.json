@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/krzysztofduda/Documents/leetcode/csharp/removeElement/dotnet.csproj": {}
+    "/Users/krzysztofduda/Documents/leetcode/csharp/jewels-and-stones/dotnet.csproj": {}
   },
   "projects": {
-    "/Users/krzysztofduda/Documents/leetcode/csharp/removeElement/dotnet.csproj": {
+    "/Users/krzysztofduda/Documents/leetcode/csharp/jewels-and-stones/dotnet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/krzysztofduda/Documents/leetcode/csharp/removeElement/dotnet.csproj",
+        "projectUniqueName": "/Users/krzysztofduda/Documents/leetcode/csharp/jewels-and-stones/dotnet.csproj",
         "projectName": "dotnet",
-        "projectPath": "/Users/krzysztofduda/Documents/leetcode/csharp/removeElement/dotnet.csproj",
+        "projectPath": "/Users/krzysztofduda/Documents/leetcode/csharp/jewels-and-stones/dotnet.csproj",
         "packagesPath": "/Users/krzysztofduda/.nuget/packages/",
-        "outputPath": "/Users/krzysztofduda/Documents/leetcode/csharp/removeElement/obj/",
+        "outputPath": "/Users/krzysztofduda/Documents/leetcode/csharp/jewels-and-stones/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/krzysztofduda/.nuget/NuGet/NuGet.Config"
@@ -48,12 +48,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.15, 7.0.15]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.osx-arm64",
+              "version": "[7.0.15, 7.0.15]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.15, 7.0.15]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.402/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/RuntimeIdentifierGraph.json"
         }
       }
     }
