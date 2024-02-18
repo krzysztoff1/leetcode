@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "longest-common-prefix", "..
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "reverse-words-in-a-string", "..\reverse-words-in-a-string\reverse-words-in-a-string.csproj", "{2D04A2E8-6D4F-4B33-97C8-178C9DB91AA1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "search-insert-position", "..\search-insert-position\search-insert-position.csproj", "{9D5E3C45-148B-4A39-8D7E-46E0B1FCFD22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "find-first-and-last-position-of-element-in-sorted-array", "..\find-first-and-last-position-of-element-in-sorted-array\find-first-and-last-position-of-element-in-sorted-array.csproj", "{DD90BAAB-9A27-4122-AAB4-5D51446C1DB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "russian-doll-envelopes", "..\russian-doll-envelopes\russian-doll-envelopes.csproj", "{9EC715AE-87D7-4088-948B-5B82F1CAD9BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +33,18 @@ Global
 		{2D04A2E8-6D4F-4B33-97C8-178C9DB91AA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D04A2E8-6D4F-4B33-97C8-178C9DB91AA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D04A2E8-6D4F-4B33-97C8-178C9DB91AA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D5E3C45-148B-4A39-8D7E-46E0B1FCFD22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D5E3C45-148B-4A39-8D7E-46E0B1FCFD22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D5E3C45-148B-4A39-8D7E-46E0B1FCFD22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D5E3C45-148B-4A39-8D7E-46E0B1FCFD22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD90BAAB-9A27-4122-AAB4-5D51446C1DB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD90BAAB-9A27-4122-AAB4-5D51446C1DB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD90BAAB-9A27-4122-AAB4-5D51446C1DB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD90BAAB-9A27-4122-AAB4-5D51446C1DB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EC715AE-87D7-4088-948B-5B82F1CAD9BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EC715AE-87D7-4088-948B-5B82F1CAD9BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EC715AE-87D7-4088-948B-5B82F1CAD9BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EC715AE-87D7-4088-948B-5B82F1CAD9BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
