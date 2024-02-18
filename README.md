@@ -46,6 +46,7 @@ Used only for learning purposes. Solutions are not optimal.
 | [Remove Duplicates from Sorted Array](./leetcode/tree/master/csharp/remove-duplicates-from-sorted-array) | [View](https://leetcode.com/problems/remove-duplicates-from-sorted-array) | $${\color{green}Easy}$$ |
 | [Remove Element](./leetcode/tree/master/csharp/remove-element) | [View](https://leetcode.com/problems/remove-element) | $${\color{green}Easy}$$ |
 | [Reverse Words in a String](./leetcode/tree/master/csharp/reverse-words-in-a-string) | [View](https://leetcode.com/problems/reverse-words-in-a-string) | $${\color{orange}Medium}$$ |
+| [Rotate Image](./leetcode/tree/master/csharp/rotate-image) | [View](https://leetcode.com/problems/rotate-image) | $${\color{orange}Medium}$$ |
 | [Shuffle the Array](./leetcode/tree/master/csharp/shuffle-the-array) | [View](https://leetcode.com/problems/shuffle-the-array) | $${\color{green}Easy}$$ |
 | [Strictly Palindromic Number](./leetcode/tree/master/csharp/strictly-palindromic-number) | [View](https://leetcode.com/problems/strictly-palindromic-number) | $${\color{orange}Medium}$$ |
 | [Sum in a Matrix](./leetcode/tree/master/csharp/sum-in-a-matrix) | [View](https://leetcode.com/problems/sum-in-a-matrix) | $${\color{orange}Medium}$$ |
