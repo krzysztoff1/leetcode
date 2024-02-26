@@ -37,6 +37,7 @@ Used only for learning purposes. Solutions are not optimal.
 | [Best Time to Buy and Sell Stock](./leetcode/tree/master/csharp/best-time-to-buy-and-sell-stock) | [View](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | $${\color{green}Easy}$$ |
 | [Design Parking System](./leetcode/tree/master/csharp/design-parking-system) | [View](https://leetcode.com/problems/design-parking-system) | $${\color{green}Easy}$$ |
 | [Final Value of Variable After Performing Operations](./leetcode/tree/master/csharp/final-value-of-variable-after-performing-operations) | [View](https://leetcode.com/problems/final-value-of-variable-after-performing-operations) | $${\color{green}Easy}$$ |
+| [Find First and Last Position of Element in Sorted Array](./leetcode/tree/master/csharp/find-first-and-last-position-of-element-in-sorted-array) | [View](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array) | $${\color{orange}Medium}$$ |
 | [Jewels and Stones](./leetcode/tree/master/csharp/jewels-and-stones) | [View](https://leetcode.com/problems/jewels-and-stones) | $${\color{green}Easy}$$ |
 | [Length of Last Word](./leetcode/tree/master/csharp/length-of-last-word) | [View](https://leetcode.com/problems/length-of-last-word) | $${\color{green}Easy}$$ |
 | [Longest Common Prefix](./leetcode/tree/master/csharp/longest-common-prefix) | [View](https://leetcode.com/problems/longest-common-prefix) | $${\color{green}Easy}$$ |
@@ -46,6 +47,8 @@ Used only for learning purposes. Solutions are not optimal.
 | [Remove Duplicates from Sorted Array](./leetcode/tree/master/csharp/remove-duplicates-from-sorted-array) | [View](https://leetcode.com/problems/remove-duplicates-from-sorted-array) | $${\color{green}Easy}$$ |
 | [Remove Element](./leetcode/tree/master/csharp/remove-element) | [View](https://leetcode.com/problems/remove-element) | $${\color{green}Easy}$$ |
 | [Reverse Words in a String](./leetcode/tree/master/csharp/reverse-words-in-a-string) | [View](https://leetcode.com/problems/reverse-words-in-a-string) | $${\color{orange}Medium}$$ |
+| [Rotate Image](./leetcode/tree/master/csharp/rotate-image) | [View](https://leetcode.com/problems/rotate-image) | $${\color{orange}Medium}$$ |
+| [Search Insert Position](./leetcode/tree/master/csharp/search-insert-position) | [View](https://leetcode.com/problems/search-insert-position) | $${\color{green}Easy}$$ |
 | [Shuffle the Array](./leetcode/tree/master/csharp/shuffle-the-array) | [View](https://leetcode.com/problems/shuffle-the-array) | $${\color{green}Easy}$$ |
 | [Strictly Palindromic Number](./leetcode/tree/master/csharp/strictly-palindromic-number) | [View](https://leetcode.com/problems/strictly-palindromic-number) | $${\color{orange}Medium}$$ |
 | [Sum in a Matrix](./leetcode/tree/master/csharp/sum-in-a-matrix) | [View](https://leetcode.com/problems/sum-in-a-matrix) | $${\color{orange}Medium}$$ |
