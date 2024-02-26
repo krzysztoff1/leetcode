@@ -1,38 +1,27 @@
-﻿IList<IList<string>> GroupAnagrams(string[] strs)
+﻿
+IList<IList<string>> GroupAnagrams(string[] strs)
 {
-    IList<IList<char[]>> output = [];
+    Dictionary<string, IList<string>> dict = [];
 
     for (int i = 0; i < strs.Length; i++)
     {
-        char[] chars = strs[i].ToCharArray();
-        bool wasAdded = false;
+        char[] sortedChars = strs[i].ToCharArray();
+        sortedChars = sortedChars.OrderBy(c => c).ToArray();
+        string wordWithSortedChars = new(sortedChars);
 
-        for (int j = 0; j < output.Count; j++)
+        if (dict.ContainsKey(wordWithSortedChars))
         {
-            char[] existingChars = output[j][0];
-            bool isSame = chars.Length == existingChars.Length && Enumerable.SequenceEqual(chars.OrderBy(e => e), existingChars.OrderBy(e => e));
+            dict[wordWithSortedChars].Add(strs[i]);
 
-            if (isSame)
-            {
-                output[j].Add(chars);
-                wasAdded = true;
-            }
+        }
+        else
+        {
+            dict.Add(wordWithSortedChars, [strs[i]]);
         }
 
-        if (!wasAdded)
-        {
-            output.Add([chars]);
-        }
     }
 
-    IList<IList<string>> result = [];
-
-    for (int i = 0; i < output.Count; i++)
-    {
-        result.Add(output[i].Select(x => string.Join("", x)).ToList());
-    }
-
-    return result;
+    return [.. dict.Values];
 }
 
 Console.WriteLine("Input:");
