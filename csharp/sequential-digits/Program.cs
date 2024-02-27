@@ -1,9 +1,8 @@
 ﻿IList<int> SequentialDigits(int low, int high)
 {
-    IList<int> result = [];
+    List<int> result = [];
 
     string numbers = "123456789";
-
 
 
     for (int i = 0; i < numbers.Length; i++)
@@ -29,13 +28,14 @@
             int n = int.Parse(s);
 
 
-            if (n > low && n < high)
+            if (n >= low && n <= high)
             {
                 result.Add(n);
             }
         }
     }
 
+    result.Sort();
 
     return result;
 }
@@ -56,6 +56,6 @@ void printList<T>(IList<T> list)
 }
 
 
-Console.WriteLine($"SequentialDigits(1000, 13000)");
-printList(SequentialDigits(1000, 13000));
+Console.WriteLine($"SequentialDigits(234, 2314)");
+printList(SequentialDigits(234, 2314));
 
